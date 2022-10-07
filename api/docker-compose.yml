@@ -1,0 +1,58 @@
+version: '3.9'
+
+services:
+  postgres_container:
+    image: postgres
+    container_name: postgres_container
+    environment:
+      POSTGRES_USER: celiorscosta
+      POSTGRES_PASSWORD: "@Senha123"
+      POSTGRES_DB: cadastro_de_veiculos
+      POSTGRES_DB_HOST: localhost
+      PGDATA: /data/db
+    volumes:
+      - postgres:/data/db
+    ports:
+      - 5432:5432
+    networks:
+      - compose-bridge
+    restart: unless-stopped
+
+  pgadmin_container:
+    image: dpage/pgadmin4    
+    container_name: pgadmin_container
+    environment:
+      PGADMIN_DEFAULT_EMAIL: "celiorscosta@hotmail.com"
+      PGADMIN_DEFAULT_PASSWORD: "PgAdmin2022!"
+      PGADMIN_CONFIG_SERVER_MODE: 'False'
+    volumes:
+      - pgadmin:/var/lib/pgadmin
+    ports:
+      - 16543:80
+    depends_on:
+      - postgres_container
+    networks:
+      - compose-bridge
+    restart: unless-stopped
+  
+  api_node:
+    build: .
+    command: "npm start"
+    container_name: api_node    
+    restart: unless-stopped
+    networks:
+      - compose-bridge
+    ports:
+      - "3000:3000"
+    volumes:
+      - .:/usr/app
+    depends_on:
+      - postgres_container
+
+networks:
+  compose-bridge:
+    driver: bridge
+volumes:
+  postgres:
+  pgadmin:
+    
