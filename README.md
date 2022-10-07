@@ -43,7 +43,8 @@ npx sequelize-cli db:migrate
 npx sequelize-cli db:seed:all
 ```
 
-Após isso, volte o campo "host" no arquivo "config.json" para "postgres_container".
+Após isso, volte o campo "host" no arquivo "config.json" para "postgres_container" e salve o arquivo.
 
-Pronto.
+Pronto. Fazendo isso, é para funcionar.
+
 
