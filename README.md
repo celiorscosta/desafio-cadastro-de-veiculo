@@ -30,7 +30,9 @@ docker-compose up
 
 ### Migrate
 
-Abra um novo terminal e acesse a pasta backend-api do projeto para executar os passos a seguir .
+Abra um novo terminal e acesse a pasta backend-api do projeto para executar os passos a seguir.
+
+Certifique-se de ter acessado a pasta "backend-api" ou rode o comando ```cd .\backend-api\``` no terminal.
 
 Alterar o campo "host" no arquivo "config.json" dentro da pasta "src/config" de "postgres_container" para "localhost" e rodar os comandos a seguir para criar a tabela e preencher com alguns dados iniciais:
 
