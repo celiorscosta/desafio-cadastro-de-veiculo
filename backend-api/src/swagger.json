@@ -1,0 +1,16 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Cadastro de Veículo",
+        "description": "Documentação da API",
+        "version": "1.0.0"
+    },
+    "basePath": "/",
+    "paths": {
+        "/carros":{
+            "get":{}
+        }
+    }
+
+
+}
