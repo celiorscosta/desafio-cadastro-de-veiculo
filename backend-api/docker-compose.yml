@@ -5,7 +5,7 @@ services:
     image: postgres
     container_name: postgres_container
     environment:
-      POSTGRES_USER: celiorscosta
+      POSTGRES_USER: meu_usuario
       POSTGRES_PASSWORD: "@Senha123"
       POSTGRES_DB: cadastro_de_veiculos
       POSTGRES_DB_HOST: localhost
@@ -22,7 +22,7 @@ services:
     image: dpage/pgadmin4    
     container_name: pgadmin_container
     environment:
-      PGADMIN_DEFAULT_EMAIL: "celiorscosta@hotmail.com"
+      PGADMIN_DEFAULT_EMAIL: "meu_usuario@email.com"
       PGADMIN_DEFAULT_PASSWORD: "PgAdmin2022!"
       PGADMIN_CONFIG_SERVER_MODE: 'False'
     volumes:
