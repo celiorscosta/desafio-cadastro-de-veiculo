@@ -12,7 +12,10 @@ Conteúdo que deve ser desenvolvido.
 - Conter os campos "Placa, Ano, Modelo, Ativo e Marca"
 
 
+
 ## Project setup
+Rode os comandos a seguir para executar o projeto.
+
 ```
 npm install
 ```
