@@ -17,6 +17,9 @@ Conteúdo que deve ser desenvolvido.
 Rode os comandos a seguir para executar o projeto.
 
 ```
+cd .\backend-api\
+```
+```
 npm install
 ```
 
