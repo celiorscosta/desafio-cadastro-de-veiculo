@@ -1,12 +1,14 @@
 # Desafio de cadastro de veículo
 
-Um desafio onde devemos criar um ambiente utilizando nodeJS, Postgres e Docker e criar uma api que permitira cadastrar, buscar e editar os dados de um cadastro de veículo.
+Um desafio onde devemos criar um ambiente utilizando NodeJS, Postgres e Docker e criar uma api que permitira cadastrar, buscar e editar os dados de um cadastro de veículo.
 
 Conteúdo que deve ser desenvolvido.
 - Obrigatório usar Dockercompose.yml;
+- Criar e manter os dados usando "volumes" no docker;
+- Usar Express;
 - Conter as operações "GET, POST, PUT e DELETE";
 - Buscar por Id do veículo;
-- A tabela "Carro";
+- Conter uma tabela chamada "Carro";
 - Conter os campos "Placa, Ano, Modelo, Ativo e Marca"
 
 
@@ -15,20 +17,20 @@ Conteúdo que deve ser desenvolvido.
 npm install
 ```
 
-### Compiles and hot-reloads for development
+### Docker Compose
 ```
-npm run serve
-```
-
-### Compiles and minifies for production
-```
-npm run build
+docker-compose up
 ```
 
-### Lints and fixes files
+### Migrate
+
+Alterar o campo "host" no arquivo "config.json" dentro da pasta config de "postgres_container" para "localhost" e rodar os comandos a seguir para criar a tabela e preencher com alguns dados iniciais:
 ```
-npm run lint
+npx sequelize-cli db:migrate:all
+```
+```
+npx sequelize-cli db:seed:all
 ```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+Após isso, volte o campo "host" no arquivo "config.json" para "postgres_container";
+
