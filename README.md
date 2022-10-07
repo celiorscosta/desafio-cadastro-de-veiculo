@@ -33,9 +33,7 @@ docker-compose up
 Abra um novo terminal e acesse a pasta backend-api do projeto para executar os passos a seguir .
 
 Alterar o campo "host" no arquivo "config.json" dentro da pasta "src/config" de "postgres_container" para "localhost" e rodar os comandos a seguir para criar a tabela e preencher com alguns dados iniciais:
-```
-cd .\backend-api\
-```
+
 ```
 npx sequelize-cli db:migrate
 ```
