@@ -8,9 +8,14 @@
     "basePath": "/",
     "paths": {
         "/carros":{
-            "get":{}
+            "get":{
+                "description": "Retorna uma lista com os dados do cadastro de veículo.",
+                "responses": {
+                  "200": {          
+                    "description": "Lista de veículos."
+                  }
+                }
+            }
         }
     }
-
-
 }
