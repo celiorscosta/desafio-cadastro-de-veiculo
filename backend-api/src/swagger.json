@@ -16,6 +16,22 @@
                   }
                 }
             }
+        },
+        "/carros:{id}":{
+            "get":{
+                "description": "Retorna uma lista com os dados do cadastro de veículo.",
+                "parameters": {
+                    "in": "paths",
+                    "name": "id",
+                    "required": true,
+                    "description": "Id do registro do veículo no banco de dados."
+                },
+                "responses": {
+                  "200": {          
+                    "description": "Lista de veículos."
+                  }
+                }
+            }
         }
     }
 }
