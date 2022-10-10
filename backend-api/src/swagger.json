@@ -34,7 +34,7 @@
                 }
             }
         },
-        "/carro":{
+        "/carros/novo":{
           "post":{
               "description": "Cadastra um novo veículo na base de dados.",   
               "requestBody": {
