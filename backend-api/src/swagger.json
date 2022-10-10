@@ -69,6 +69,49 @@
                 }
               }
           }
+      },      
+      "/carros/{id}/atualiza":{
+        "put":{
+            "description": "Atualiza um veículo na base de dados.", 
+            "parameters": [{
+              "in": "path",
+              "name": "id",
+              "required": true,
+              "type": "integer",
+              "description": "Id do registro do veículo no banco de dados."
+            }], 
+            "requestBody": {
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "type": "object",
+                    "properties": {
+                      "placa": {
+                          "type": "string"
+                      },
+                      "ano": {
+                          "type": "number"
+                      },
+                      "modelo":{
+                          "type": "string"
+                      },
+                      "ativo":{
+                          "type": "boolean"
+                      },
+                      "marca": {
+                          "type": "string"
+                      }                        
+                    }
+                  }
+                }
+              }
+            },           
+            "responses": {
+              "200": {          
+                "description": "Cadastra um novo veículo."
+              }
+            }
+        }
       }
     }
 }
