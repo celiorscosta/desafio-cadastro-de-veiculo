@@ -14,7 +14,11 @@ Conteúdo que deve ser desenvolvido.
 
 
 ## Project setup
-Rode os comandos a seguir para executar o projeto.
+Leia com atenção todo o conteudo abaixo para que no final a API funcione.
+
+Rode os comandos a seguir.
+
+Caso você já esteja no diretório abaixo, pule para o comando a seguir.
 
 ```
 cd .\backend-api\
