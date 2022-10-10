@@ -17,21 +17,53 @@
                 }
             }
         },
-        "/carros:{id}":{
+        "/carros/{id}":{
             "get":{
                 "description": "Retorna uma lista com os dados do cadastro de veículo.",
-                "parameters": {
-                    "in": "paths",
+                "parameters": [{
+                    "in": "path",
                     "name": "id",
                     "required": true,
+                    "type": "integer",
                     "description": "Id do registro do veículo no banco de dados."
-                },
+                }],
                 "responses": {
                   "200": {          
                     "description": "Lista de veículos."
                   }
                 }
             }
-        }
+        },
+        "/carros/":{
+          "post":{
+              "description": "Cadastra um novo veículo na base de dados.",   
+              "requestBody": {
+                "required": true,
+                "content": {
+                  "application/json":{
+                    "schema":{
+                      "type": "object",
+                      "properties":{                        
+                        "id": 1,
+                        "placa": "AAA1111",
+                        "ano": 2020,
+                        "modelo": "Versa SL",
+                        "ativo": true,
+                        "marca": "Nissan",
+                        "createdAt": "2022-10-08T12:09:44.879Z",
+                        "updatedAt": "2022-10-08T12:09:44.880Z",
+                        "deletedAt": null      
+                      }
+                    }
+                  }
+                }
+              },           
+              "responses": {
+                "200": {          
+                  "description": "Cadastra um novo veículo."
+                }
+              }
+          }
+      }
     }
 }
