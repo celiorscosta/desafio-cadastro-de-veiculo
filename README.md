@@ -27,7 +27,12 @@ cd .\backend-api\
 npm install
 ```
 
+Feito isso a pasta ``node_modules`` devera ter sido criada.
+
 ### Docker Compose
+
+O ambiente foi todo criado utilizando o docker para montar a infraestrutura. Basta rodar o comando a seguir e toda a infraestrutura sera montada no docker e o sistema devera startar.
+
 ```
 docker-compose up
 ```
