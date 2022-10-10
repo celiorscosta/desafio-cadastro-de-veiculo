@@ -108,7 +108,75 @@
             },           
             "responses": {
               "200": {          
-                "description": "Cadastra um novo veículo."
+                "description": "Atualiza um novo veículo."
+              }
+            }
+        }
+      },      
+      "/carros/{id}/inativa":{
+        "put":{
+            "description": "Inativa um veículo na base de dados.", 
+            "parameters": [{
+              "in": "path",
+              "name": "id",
+              "required": true,
+              "type": "integer",
+              "description": "Id do registro do veículo no banco de dados."
+            }],                    
+            "responses": {
+              "200": {          
+                "description": "Inativa um novo veículo."
+              }
+            }
+        }
+      },      
+      "/carros/{id}/reativa":{
+        "put":{
+            "description": "Ativa um veículo na base de dados.", 
+            "parameters": [{
+              "in": "path",
+              "name": "id",
+              "required": true,
+              "type": "integer",
+              "description": "Id do registro do veículo no banco de dados."
+            }],                    
+            "responses": {
+              "200": {          
+                "description": "Ativa um novo veículo."
+              }
+            }
+        }
+      },
+      "/carros/{id}/restaura":{
+        "put":{
+            "description": "Restaura o registro de um veículo que foi deletado da base de dados.", 
+            "parameters": [{
+              "in": "path",
+              "name": "id",
+              "required": true,
+              "type": "integer",
+              "description": "Id do registro do veículo no banco de dados."
+            }],                    
+            "responses": {
+              "200": {          
+                "description": "Restaura o registro de um veículo."
+              }
+            }
+        }
+      },
+      "/carros/{id}/deleta":{
+        "delete":{
+            "description": "Deleta o registro de um veículo da base de dados.", 
+            "parameters": [{
+              "in": "path",
+              "name": "id",
+              "required": true,
+              "type": "integer",
+              "description": "Id do registro do veículo no banco de dados."
+            }],                    
+            "responses": {
+              "200": {          
+                "description": "Deleta o registro de um veículo."
               }
             }
         }

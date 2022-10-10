@@ -55,11 +55,10 @@ class VeiculoController {
     static async restauraUmVeiculo(req, res) {
         const { id } = req.params;
         try {
-
-            const registroRestaurado = await veiculosServices.restauraRegistro(Number(id));
+            await veiculosServices.restauraRegistro(Number(id));
             return res.status(200).json(registroRestaurado);
         } catch (error) {
-            return res.status(500).json(error.message);
+            return res.status(500).json({ mensagem: `id ${id} restaurado` });
         }
     }
 

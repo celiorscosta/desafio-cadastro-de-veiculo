@@ -15,6 +15,6 @@ router
     .put('/carros/:id/reativa', VeiculoController.reativaUmVeiculo)
     .put('/carros/:id/restaura', VeiculoController.restauraUmVeiculo)
 
-    .delete('/carros/:id', VeiculoController.apagaUmVeiculo);
+    .delete('/carros/:id/deleta', VeiculoController.apagaUmVeiculo);
 
 module.exports = router;
