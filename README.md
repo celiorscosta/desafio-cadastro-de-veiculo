@@ -18,7 +18,7 @@ Leia com atenção todo o conteudo abaixo para que no final a API funcione.
 
 Rode os comandos a seguir.
 
-Caso você já esteja no diretório abaixo, pule para o comando a seguir.
+Caso você já esteja no diretório abaixo, pule para o comando ``npm install``.
 
 ```
 cd .\backend-api\
