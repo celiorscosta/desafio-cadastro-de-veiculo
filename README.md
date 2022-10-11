@@ -1,11 +1,12 @@
-# Desafio - Cadastro de veículo
 
-Um desafio onde devemos criar um ambiente utilizando NodeJS, Postgres e Docker e criar uma api que permitira cadastrar, buscar e editar os dados de um cadastro de veículo.
+# Desafio - Cadastro de veículo
 
 | :placard: API em NodeJS |     |
 | -------------  | --- |
 | :sparkles: Nome        | **Cadastro de veículo**
 | :label: Tecnologias | NodeJS, Postgres, Docker
+
+Um desafio onde devemos criar um ambiente utilizando NodeJS, Postgres e Docker e criar uma api que permitira cadastrar, buscar e editar os dados de um cadastro de veículo.
 
 ## Detalhes do projeto
 
