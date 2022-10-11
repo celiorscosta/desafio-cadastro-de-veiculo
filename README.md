@@ -11,8 +11,6 @@ Conteúdo que deve ser desenvolvido.
 - Conter uma tabela chamada "Carro";
 - Conter os campos "Placa, Ano, Modelo, Ativo e Marca"
 
-
-
 ## Project setup
 Leia com atenção todo o conteudo abaixo para que no final a API funcione.
 
