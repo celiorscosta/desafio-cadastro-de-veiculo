@@ -2,6 +2,15 @@
 
 Um desafio onde devemos criar um ambiente utilizando NodeJS, Postgres e Docker e criar uma api que permitira cadastrar, buscar e editar os dados de um cadastro de veículo.
 
+| :placard: API em NodeJS |     |
+| -------------  | --- |
+| :sparkles: Nome        | **Cadastro de veículo**
+| :label: Tecnologias | NodeJS, Postgres, Docker
+
+## Detalhes do projeto
+
+Textos e imagens que descrevam seu projeto, suas conquistas, seus desafios, próximos passos, etc...
+
 Conteúdo que deve ser desenvolvido.
 - Obrigatório usar Dockercompose.yml;
 - Criar e manter os dados usando "volumes" no docker;
