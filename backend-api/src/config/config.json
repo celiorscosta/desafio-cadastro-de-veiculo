@@ -1,6 +1,6 @@
 {
   "development": {
-    "username": "meu_usuario",
+    "username": "celiorscosta",
     "password": "@Senha123",
     "database": "cadastro_de_veiculos",
     "host": "postgres_container",

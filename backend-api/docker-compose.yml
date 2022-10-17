@@ -5,7 +5,7 @@ services:
     image: postgres
     container_name: postgres_container
     environment:
-      POSTGRES_USER: meu_usuario
+      POSTGRES_USER: celiorscosta
       POSTGRES_PASSWORD: "@Senha123"
       POSTGRES_DB: cadastro_de_veiculos
       POSTGRES_DB_HOST: localhost
